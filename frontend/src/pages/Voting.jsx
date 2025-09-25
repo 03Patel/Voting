@@ -21,7 +21,7 @@ function Voting() {
     if (!selectedOption) return alert("Select an option");
 
     try {
-      const res = await axios.post("http://localhost:5000/api/vote", {
+      const res = await axios.post("https://votiingapp.onrender.com/api/vote", {
         name,
         sessionId,
         option: selectedOption,
