@@ -11,7 +11,7 @@ function Login() {
     if (!name) return alert("Enter your name");
 
     try {
-      const res = await axios.post("http://localhost:5000/api/login", { name });
+      const res = await axios.post("https://votiingapp.onrender.com/api/login", { name });
       localStorage.setItem("sessionId", res.data.sessionId);
       localStorage.setItem("name", res.data.name);
       navigate("/vote");
