@@ -7,7 +7,7 @@ function Dashboard() {
 
   const fetchResults = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/results");
+      const res = await axios.get("https://votiingapp.onrender.com/api/results");
 
       // Ensure all options exist with default 0
       const allOptions = ["Option A", "Option B", "Option C"];
